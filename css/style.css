@@ -1,0 +1,310 @@
+.container {
+  background: linear-gradient(#d00000, #6a040f);
+  background-color: #d00000;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container::after {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../assets/rings.png') no-repeat center;
+  opacity: 0.5;
+  z-index: -99;
+}
+
+.container header {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.container header .logo {
+  position: relative;
+}
+
+.container header .logo img {
+  height: 8em;
+}
+
+.container header nav ul li {
+  float: left;
+  list-style: none;
+  margin-right: 3em;
+}
+
+.container header nav ul li a {
+  font: 1em 'Londrina Solid', cursive;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container header nav ul li a:after {
+  content: ' ';
+  width: 80%;
+  height: 0.2em;
+  background: #ffc107;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.container header nav ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+.container header .basket {
+  position: relative;
+  right: 10px;
+}
+
+.container header .basket a {
+  padding: 12px;
+  border-radius: 12px;
+  background: white;
+  color: #370617;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+}
+
+.container header .basket a:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: #ffc107;
+}
+
+.container header .basket .basket--items {
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  height: 20px;
+  width: 20px;
+  background: #370617;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 'Mada', sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.container section {
+  padding-top: 60px;
+  max-width: 1400px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+}
+
+.container section .products {
+  position: relative;
+  color: #ffc107;
+  width: 50%;
+}
+
+.container section .products h1 {
+  font: 5em 'Londrina Solid', cursive;
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 1em;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 0 #370617;
+  position: relative;
+  overflow: hidden;
+}
+
+.container section .products h3 {
+  font: 2em 'Londrina Solid', cursive;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 0 #370617;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 2px black;
+    position: relative;
+  overflow: hidden;
+}
+
+.container section .products p {
+  width: 80%;
+  font: 1em 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  color: white;
+    position: relative;
+  overflow: hidden;
+}
+
+.container section .products p strong {
+  display: block;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.container section .products h2 {
+  font: 3em 'Londrina Solid', cursive;
+  font-weight: 900;
+  margin: 40px 0px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #370617;
+  -webkit-text-stroke: 2px #370617;
+    position: relative;
+  overflow: hidden;
+}
+
+.container section .products .btn {
+ height: 60px;   
+ overflow: hidden;
+
+}
+
+.container section .products a {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #ffc107;
+    padding: 10px 40px;
+    font-family: 'Londrina Solid', cursive;
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .25s ease-in-out;
+    z-index: 4;
+}
+
+.container section .products a:hover{
+    background: #ffc107;
+    color: #370617;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container section .products a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #ffc107;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .25s ease-in-out;
+    z-index: -1;
+}
+
+.container section .products a:hover::before {
+    transform: scaleX(1);
+}
+
+.container section .products-display {
+    position: relative; 
+    width: 60%;
+}
+
+.container section .products-display figure {
+    position: relative;
+
+}
+
+.container section .products-display figure .doritos {
+    position: absolute;
+    width: 55em;
+    right: -20px;
+    top: -6em;
+    z-index: -1;
+}
+
+.container section .products-display figure .backdrop {
+    width: 40em;
+    height: 50em;
+    background: #ffae03;
+    position: absolute;
+    top: 15em;
+    right: 60px;
+    z-index: -2;
+    border-radius: 30px;
+    transform: skew(-5deg, -5deg);
+}
+
+.container section .products-display figure span {
+    position: relative;
+}
+
+.container section .products-display figure span  img{
+    position: absolute;
+    z-index: 5;
+}
+
+.container section .products-display figure span .chips{
+    height: 22em;
+    top: -5em;
+    left: 22em;
+    transform: rotate(10deg);
+}
+
+.container section .products-display figure span .ketchup{
+    height: 9em;
+    top: 33em;
+}
+
+.container section .products-display figure span .chilli{
+    height: 20em;
+    top: 30em;
+    left: 28em;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 99999;
+}
+
+.first {
+    background: #d00000;
+}
+
+.second {
+    left: 33.33%;
+    background: #d00000;
+}
+
+.three {
+    background: #d00000;
+    left: 66.66%;
+}
+
+.hide {
+    position: relative;
+    display: inline-block;
+}

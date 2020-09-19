@@ -1,16 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doritos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;900&family=Londrina+Solid:wght@300;900&family=Mada:wght@200;400;500;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;900&family=Londrina+Solid:wght@300;900&family=Mada:wght@200;400;500;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div class="container">
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay three"></div>
+
+        <header>
+            <div class="logo">
+                <img src="./assets/doritos_logo.png" alt="Doritos Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our company</a></li>
+                    <li><a href="#">Tasty rewards</a></li>
+                    <li><a href="#">Where to buy</a></li>
+                </ul>
+            </nav>
+
+            <div class="basket">
+                <a href="#">
+                    <ion-icon name="basket"></ion-icon>
+                </a>
+                <span class="basket--items">2</span>
+            </div>
+        </header>
+        <section>
+            <div class="products">
+                <h1>
+                    <span  class="hide">Light a fire under your taste buds</span></h1>
+                <h3>
+                    <span class="hide">
+                        Nacho cheese
+                    </span>
+                </h3>
+                <p>
+                    <span class="hide">Corn, Vegetable Oil (Corn, Canola, And/or Sunflower Oil), Maltodextrin (Made From Corn), Salt,
+                        Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes), Whey, Monosodium Glutamate, Buttermilk,
+                        Romano Cheese (Part-skim Cow's Milk, Cheese Cultures, Salt, Enzymes), Whey Protein Concentrate,
+                        Onion Powder, Corn Flour, Natural And Artificial Flavor, Dextrose, Tomato Powder, Lactose,
+                        Spices, Artificial Color (Yellow 6, Yellow 5, And Red 40), Lactic Acid, Citric Acid, Sugar,
+                        Garlic Powder, Skim Milk, Red And Green Bell Pepper Powder, Disodium Inosinate, And Disodium
+                        Guanylate.
+                        laborum provident earum beatae totam eveniet? Amet, adipisci eius?
+                        <strong>CONTAINS MILK INGREDIENTS.</strong>
+                    </span>
+                </p>
+                <h2>
+                    <span class="hide">
+                        $3.99
+                    </span>
+                </h2>
+                <div class="btn">
+                    <span class="hide"> <a href="#">Add to basket</a></span>                   
+                </div>
+            </div>
+            <div class="products-display">
+                <figure>
+                    <img class="doritos" src="./assets/doritos.png" alt="Doritos" class="doritos">
+                    <div class="backdrop"></div>
+                    <span>
+                        <img class="chips" src="./assets/doritos_chips.png" alt="Chips">
+                        <img class="ketchup" src="./assets/ketchup_1.png" alt="Ketchup">
+                        <img class="chilli" src="./assets/suya_pepper.png" alt="Sauce">
+                    </span>
+                </figure>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
-
-
