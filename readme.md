@@ -2,8 +2,10 @@
 
  Just a simple landing page, practicing some greensock features ❤
 
-
 ![Capa do Projeto](/assets/cover.jpg)
+
+## Demo
+ [Click here to see a demo](https://matheusbronca.github.io/doritos-gsap/)
 
 ## Tecnologias
 
